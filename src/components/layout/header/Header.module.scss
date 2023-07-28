@@ -5,9 +5,9 @@
     top:0;
     z-index: 4;
     width: 100%;
-    background-color: var(--endcolor);
+    background-color: rgba($color: #61567b, $alpha: 0.6);
     
-    color: var(--background-end-rgb);
+    color: white;
     padding: 1rem 1rem;
         &_links {
             display: flex;
