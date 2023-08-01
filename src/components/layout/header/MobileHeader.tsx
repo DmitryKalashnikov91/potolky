@@ -4,9 +4,9 @@ import { links } from "./Header"
 const MobileHeader = () => {
   return (
     <nav>
-        <ul>
+        <ul className="pt-2">
     {links.map((item) => (
-        <li key={item.id}>{item.title}</li>
+        <li key={item.id} className="pb-5 ps-8">{item.title}</li>
     ))}</ul>
     </nav>
   )

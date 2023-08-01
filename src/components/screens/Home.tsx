@@ -4,6 +4,7 @@ import { Layout } from '../layout'
 import styles from './Home.module.scss'
 import { navLinks } from '../layout/header/Header'
 import { MainContent } from '../mainContent/MainContent'
+import Advantages from '../advantages/Advantages'
 
 const buttons = [
   {
@@ -36,7 +37,9 @@ const Home = () => {
                     <p>{label}</p>
                   </div>
                 ))}
+                
             </div>
+            <Advantages />
         </Layout>
     </>
   )

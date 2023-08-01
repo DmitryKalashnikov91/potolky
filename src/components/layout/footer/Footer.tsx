@@ -1,10 +1,14 @@
-import React from 'react'
+import styles from './Footer.module.scss'
 
-type Props = {}
-
-export const Footer = (props: Props) => {
+export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className={styles.Footer}>
+      <div className={styles.Footer_conf}>
+        <span>
+        © ООО "НПО РПС", 2022 г. Сайт не является публичной офертой и носит информационный характер. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </span>
+      </div>
+    </footer>
   )
 }
 

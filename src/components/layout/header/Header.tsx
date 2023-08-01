@@ -74,14 +74,15 @@ const handleOpenMenu = () => {
                     </li>
             </ul>
         </nav>) : (
-            <>
-                <div className="space-y-2" onClick={handleOpenMenu}>
+            <div className='flex'>
+                <div className="w-12 space-y-2" onClick={handleOpenMenu}>
                     <div className="w-8 h-0.5 bg-gray-600"></div>
                     <div className="w-8 h-0.5 bg-gray-600"></div>
                     <div className="w-8 h-0.5 bg-gray-600"></div>   
                 </div>
-                {isOpenMenu && (<MobileHeader />)}
-            </>
+                {!isOpenMenu && (<a href="tel:+7999152567"><i className="bi bi-telephone-forward-fill"></i> +7 (999) 915-25-67</a>)}
+                {isOpenMenu && <MobileHeader />}
+            </div>
         )}
     </header>
   )
