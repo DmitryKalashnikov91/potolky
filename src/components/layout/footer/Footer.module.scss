@@ -7,7 +7,11 @@
     background-color: darkslateblue;
     color: azure;
     &_conf {
-        
         width: 65%;
+        @media (max-width: 800px) {
+            font-size: smaller;
+            text-align: justify;
+            width: 90%;
+        }
     }
 }
