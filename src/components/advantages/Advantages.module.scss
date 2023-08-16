@@ -1,9 +1,23 @@
 .Advantages {
+    position: relative;
     background-image: url('https://images.unsplash.com/photo-1689961644934-aca23eef8747?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1229&q=80');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    &_button {
+        position: absolute;
+        bottom: 20vh;
+        left: 47%;
+        background-color:#513156;
+        padding: 1rem;
+        color: white;
+        border: 2px solid white;
+        @media (max-width: 750px) {
+            left: 37%;
+            bottom: 2vh;
+        }
+    }
         &_wrapper {
             height: 100vh;
             width: 100wv;
@@ -26,15 +40,19 @@
                 width: 30vw;
                 height: 15vh;
                 text-align: center;
-                @media (max-width: 800px) {
+                @media (max-width: 700px) {
                     width: 90vw;
-                    height: 20vh;
+                    height: 12vh;
+                    
                 }
-                
+                p {
+                    color: azure;
+                    font-size: x-large;
+                    @media (max-width: 750px) {
+                        font-size: 18px;
+                    }
+                }
             }
-            p {
-                color: azure;
-                font-size: x-large;
-            }
+            
         }
 }

@@ -64,13 +64,13 @@ const handleOpenMenu = () => {
 }
   return (
     <header className={styles.Header}>
-        {width > 950  ? (<nav>
+        {width > 720  ? (<nav>
             <ul className={styles.Header_links}>
                 {links.map(({id, title, path}) => (
                     <li key={id}><Link href={path}>{title}</Link></li>
                 ))}
                 <li key='phone1223'>
-                        <a href='tel:+79999152567'>+7 999 915 25 67</a>
+                        <a href='+79255451440'>+7 (925) 545-14-40</a>
                     </li>
             </ul>
         </nav>) : (
@@ -80,7 +80,7 @@ const handleOpenMenu = () => {
                     <div className="w-8 h-0.5 bg-gray-600"></div>
                     <div className="w-8 h-0.5 bg-gray-600"></div>   
                 </div>
-                {!isOpenMenu && (<a href="tel:+7999152567"><i className="bi bi-telephone-forward-fill"></i> +7 (999) 915-25-67</a>)}
+                {!isOpenMenu && (<a href="tel:+79255451440"><i className="bi bi-telephone-forward-fill"></i> +7 (925) 545-14-40</a>)}
                 {isOpenMenu && <MobileHeader />}
             </div>
         )}

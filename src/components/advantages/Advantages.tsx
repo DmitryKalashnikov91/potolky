@@ -21,7 +21,14 @@ const Advantages = () => {
                     <i className="bi bi-cash-coin text-5xl text-amber-400"></i>
                     <p>Кредит и рассрочка</p>
                 </div>
+                <div className={styles.Advantages_content__item}>
+                    <i className="bi bi-stars text-5xl text-amber-400"></i>
+                    <p>Работаем с 2003 года</p>
+                </div>
             </div>
+        </div>
+        <div className={styles.Advantages_button}>
+            <button>НПО РПС</button>
         </div>
     </section>
   )
